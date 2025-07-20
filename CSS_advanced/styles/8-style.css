@@ -1,4 +1,4 @@
-/* Based on styles/6-style.css */
+/* basado en styles/7-style.css */
 
 :root {
   --color-primary: #d73953;
@@ -19,6 +19,10 @@
 
   --font-weight-regular: 400;
   --font-weight-bold: 700;
+
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
 }
 
 html {
@@ -30,6 +34,7 @@ body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
 }
 
 a {
