@@ -1,4 +1,4 @@
-/* Basado en styles/11-style.css */
+/* Basado en styles/12-style.css */
 
 :root {
   --color-primary: #d73953;
@@ -44,9 +44,21 @@ body {
   line-height: var(--line-height-base);
 }
 
-a {
+a:link {
   color: var(--text-color);
   text-decoration: none;
+}
+
+a:visited {
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
