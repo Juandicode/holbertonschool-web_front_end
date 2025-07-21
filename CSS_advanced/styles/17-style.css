@@ -353,7 +353,7 @@ template {
   box-sizing: border-box;
 }
 
-/* Based on styles/15-style.css */
+/* Based on styles/16-style.css */
 
 :root {
   --color-primary: #d73953;
@@ -380,11 +380,16 @@ template {
   --line-height-big: 1.8;
   
   --section-header-align: center;
-  
   --section-tagline-transform: uppercase;
-  
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
+  
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
 }
 
 html {
@@ -424,8 +429,22 @@ a:active {
   color: var(--color-primary);
 }
 
+.section {
+  padding: var(--section-padding);
+}
+
 .section-header {
   text-align: var(--section-header-align);
+  padding: var(--section-header-padding);
+}
+
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
 }
 
 .section-title {
@@ -452,4 +471,8 @@ a:active {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
+}
+
+.footer {
+  padding: var(--footer-padding);
 }
